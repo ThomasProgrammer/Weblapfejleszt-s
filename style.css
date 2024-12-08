@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sour Gummy", sans-serif
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: brown;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #333333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    border: 1px solid #333333;
+    padding: 10px;
+    font-size: 20px;
+    background: rgb(7, 224, 7);
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    background: transparent;
+    transition: 0.2s;
+}
+
+.white-bg{
+    background-color: #ffffff;
+}
+
+/*------programok------*/
+
+.prg{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.sor{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.prg-oszlop{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.1s;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.prg-oszlop:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*------campus-----*/
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.location-oszlop{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-oszlop img{
+    width: 100%;
+    display: block;
+}
+
+.reteg{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.reteg:hover{
+    background: rgba(226,0,0,0.7);
+}
+
+.reteg h2{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.reteg:hover h2{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.sub-header{
+    height: fit-content;
+    width: 100%;
+    background-image: url(images/background.png);
+}
+
+.photos img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.heading h3{
+    text-align: center;
+}
+
+.photos-box h1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    width: 50%;
+}
+
+.box img{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mennyiseg{
+    padding: 10px;
+}
+
+.program-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day-schedule {
+    margin-bottom: 30px;
+}
+
+.day-schedule h2 {
+    background-color: brown;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table td {
+    font-size: 1rem;
+}
